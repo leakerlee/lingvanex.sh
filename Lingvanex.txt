@@ -1,0 +1,93 @@
+curl --trace-ascii - -X POST -H 'Sec-Fetch-Dest: empty' -H 'Sec-Fetch-Mode: cors' -H 'Sec-Fetch-Site: same-origin' -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2' -H 'Accept: application/json, text/javascript, */*; q=0.01' -H 'Host: backenster.com' -H 'Authorization: Fujiwaranosai' -H 'TE: trailers' -H 'Cookie: INGRESSCOOKIE=1664344422.185.586.540436|04f981c8ca27bee1461fad758654d163' -H 'Origin: moz-extension://2358fd5c-0086-47e3-96b3-8db0bbf6f495' -d 'from=en_US' -d 'to=zh-Hans_CN' -d 'text=test' -d 'platform=browserExtension' -d 'uuid=6df1c3f4-727b-47a2-ab13-0acff726203b' -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0' https://backenster.com/v2/api/v3/translate/
+
+https://backenster.com/v2/api/v3/translate/
+{
+	"from": "en_US",
+	"to": "zh-Hans_CN",
+	"text": "test",
+	"platform": "browserExtension",
+	"uuid": "6df1c3f4-727b-47a2-ab13-0acff726203b"
+}
+
+POST /v2/api/v3/translate/ HTTP/2
+Host: backenster.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Authorization: Fujiwaranosai
+Content-Length: 102
+Origin: moz-extension://2358fd5c-0086-47e3-96b3-8db0bbf6f495
+Connection: keep-alive
+Cookie: INGRESSCOOKIE=1664344422.185.586.540436|04f981c8ca27bee1461fad758654d163
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+
+{
+	"请求头 (682 字节)": {
+		"headers": [
+			{
+				"name": "Accept",
+				"value": "application/json, text/javascript, */*; q=0.01"
+			},
+			{
+				"name": "Accept-Encoding",
+				"value": "gzip, deflate, br"
+			},
+			{
+				"name": "Accept-Language",
+				"value": "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
+			},
+			{
+				"name": "Authorization",
+				"value": "Fujiwaranosai"
+			},
+			{
+				"name": "Connection",
+				"value": "keep-alive"
+			},
+			{
+				"name": "Content-Length",
+				"value": "102"
+			},
+			{
+				"name": "Content-Type",
+				"value": "application/x-www-form-urlencoded; charset=UTF-8"
+			},
+			{
+				"name": "Cookie",
+				"value": "INGRESSCOOKIE=1664344422.185.586.540436|04f981c8ca27bee1461fad758654d163"
+			},
+			{
+				"name": "Host",
+				"value": "backenster.com"
+			},
+			{
+				"name": "Origin",
+				"value": "moz-extension://2358fd5c-0086-47e3-96b3-8db0bbf6f495"
+			},
+			{
+				"name": "Sec-Fetch-Dest",
+				"value": "empty"
+			},
+			{
+				"name": "Sec-Fetch-Mode",
+				"value": "cors"
+			},
+			{
+				"name": "Sec-Fetch-Site",
+				"value": "same-origin"
+			},
+			{
+				"name": "TE",
+				"value": "trailers"
+			},
+			{
+				"name": "User-Agent",
+				"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0"
+			}
+		]
+	}
+}
